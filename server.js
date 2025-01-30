@@ -33,7 +33,6 @@ async function queryAI(message) {
       model: "google/flan-t5-small",
       inputs: message,
     });
-
     return response.generated_text;
   } catch (error) {
     console.error("AI API Error:", error.message);
